@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand" id="brand">Starter</div>
+      <nav class="nav">
+        <button class="nav-item" data-page="home">Beranda</button>
+        <button class="nav-item" data-page="settings">Pengaturan</button>
+        <button class="nav-item" data-page="about">Tentang</button>
+      </nav>
+      <div class="sidebar-foot muted" id="version"></div>
+    </aside>
+    <main class="content" id="content"></main>
+  </div>
+  <div class="toast-wrap" id="toast-wrap"></div>
+
+  <!-- Urutan penting. Sengaja BUKAN ES module (lihat ARCHITECTURE.md). -->
+  <script src="/eel.js"></script>
+  <script src="js/core/app.js"></script>
+  <script src="js/core/api.js"></script>
+  <script src="js/core/toast.js"></script>
+  <script src="js/core/router.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script src="js/pages/about.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

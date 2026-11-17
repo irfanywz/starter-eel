@@ -1,0 +1,17 @@
+[project]
+name = "starter"
+version = "0.1.0"
+description = "Starter GUI Eel Python (base utama)"
+requires-python = ">=3.10"
+dependencies = [
+    "eel>=0.17.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.18.0",
+]
+
+[tool.uv]
+# Bukan paket yang di-install; cukup jalankan lewat `uv run python main.py`
+package = false
